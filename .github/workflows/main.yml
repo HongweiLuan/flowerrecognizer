@@ -29,5 +29,6 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.0.5'
+      - run: sudo apt-get install libglu1
       - run: flutter pub get
       - run: flutter test
